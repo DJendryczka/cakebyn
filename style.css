@@ -4,11 +4,14 @@ html{
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
 }
 /* Topografy */
 
 h1{
     font-size: 3.3rem;
+    margin-top: 4rem;
 }
 h2{
  font-size: 2.6rem;
@@ -46,9 +49,7 @@ nav a{
 }
 /* Splash */
 .splash{
+    width: 70%;
     text-align: center;
     margin-top: 3rem;
-}
-video{
-    width: 1200px;
 }
