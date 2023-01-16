@@ -1,104 +1,173 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 /* ====Topografy==== */
 
-h1{
-    font-size: 3.3rem;
-    margin-top: 2rem;
-    font-weight: 100;
+h1 {
+  font-size: 3.3rem;
+  margin-top: 2rem;
+  font-weight: 100;
 }
-h2{
- font-size: 2.45rem;
- margin: 2rem 0;
- color: rgb(112, 112, 112);
+h2 {
+  font-size: 2.45rem;
+  margin: 2rem 0;
+  color: rgb(112, 112, 112);
+}
+h3{
+    font-weight: 100;
+    font-size: 2rem;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.wraper{
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.wraper {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 /* =====Navbar==== */
-nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.desktop-menu{
-    display: flex;
-    background-color: #eee8d8;
-    padding: 0.3rem;
-    border-radius: 1rem;
+.desktop-menu {
+  display: flex;
+  background-color: #eee8d8;
+  padding: 0.3rem;
+  border-radius: 1rem;
 }
-.mobile-menu{
-    display: none;
+.mobile-menu {
+  display: none;
 }
-nav li{
-    list-style: none;
+nav li {
+  list-style: none;
 }
-nav a{
-    text-decoration: none;
-    color: black;
-    padding: 1rem 1.3rem;
-    font-size: 0.9rem;
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 1rem 1.3rem;
+  font-size: 0.9rem;
 }
-.hamburger-container{
-    display: none;
-    flex-direction: column;
-    width: 80vw;
+.hamburger-container {
+  display: none;
+  flex-direction: column;
+  width: 80vw;
 }
-.hamburger-icon{
-    display: flex;
-    justify-content: end;
-    cursor: pointer;
+.hamburger-icon {
+  display: flex;
+  justify-content: end;
+  cursor: pointer;
 }
 .hamburger-icon span {
-    display: none;
-    width: 30px;
-    height: 5px;
-    margin: 3px 0;
-    background-color: black;
+  display: none;
+  width: 30px;
+  height: 5px;
+  margin: 3px 0;
+  background-color: black;
 }
 
-@media screen and (max-width: 1069px) {
-
-    .hamburger-container{
-        display: flex;
-    }
-    .desktop-menu {
-        display: none;
-    }
-    .mobile-menu {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .mobile-menu li{
-        border-bottom: 1px solid black;
-        width: 10rem;
-        text-align: center;
-        padding: 1rem;
-    }
-    .hamburger-icon span {
-        display: block;
-    }
-    .hidden{
-        display: none;
-    }
-
+@media screen and (max-width: 969px) {
+  .hamburger-container {
+    display: flex;
+  }
+  .desktop-menu {
+    display: none;
+  }
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mobile-menu li {
+    border-bottom: 1px solid black;
+    width: 10rem;
+    text-align: center;
+    padding: 1rem;
+  }
+  .hamburger-icon span {
+    display: block;
+  }
+  .hidden {
+    display: none;
+  }
 }
 
 /* ====Splash==== */
-.splash{
-    width: 70%;
-    text-align: center;
-    margin-top: 3rem;
+.splash {
+  width: 80%;
+  text-align: center;
+  margin-top: 3rem;
+}
+.video{
+    width: 100%;
+    height: 500px;
+}
+
+/* ====About==== */
+
+.about {
+  width: 100vw;
+  background-color: #bebebecc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.container {
+  width: 90%;
+  height: 866px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0;
+}
+.text {
+  height: 866px;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+.text-content {
+  max-width: 600px;
+  padding: 0 2rem;
+}
+.image {
+  flex: 1;
+  height: 866px;
+}
+.text p{
+    line-height: 2.4rem;
+    letter-spacing: 1.2px;
+    padding: 1rem 0;
+}
+@media screen and (max-width: 1269px){
+    .container{
+        flex-direction: column;
+        height: auto;
+    }
+    .image,
+    .text{
+        flex: 1;
+    }
 }
