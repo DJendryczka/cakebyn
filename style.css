@@ -149,15 +149,14 @@ nav a {
   background-color: #ffffff;
 }
 .text-content {
-  max-width: 600px;
-  padding: 0 2rem;
+  width: 550px;
 }
 .image {
   flex: 1;
   height: 866px;
 }
 .text p{
-    line-height: 2.4rem;
+    line-height: 2.2rem;
     letter-spacing: 1.2px;
     padding: 1rem 0;
 }
@@ -166,8 +165,12 @@ nav a {
         flex-direction: column;
         height: auto;
     }
+    .text-content{
+        width: auto;
+        padding: 2rem;
+    }
     .image,
     .text{
-        flex: 1;
+        max-width: 700px;
     }
 }
