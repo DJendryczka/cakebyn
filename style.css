@@ -146,6 +146,9 @@ nav a {
   align-items: center;
   margin: 5rem 0;
 }
+.item{
+    height: 540px;
+}
 
 .text {
   height: 866px;
@@ -168,6 +171,9 @@ nav a {
     letter-spacing: 1.2px;
     padding: 1rem 0;
 }
+.item{
+    height: 540px;
+}
 @media screen and (max-width: 1269px){
     .container{
         flex-direction: column;
@@ -180,8 +186,19 @@ nav a {
     .image,
     .text{
         max-width: 700px;
+        height: auto;
     }
     h1{
         font-size: 2rem;
     }
+}
+
+
+/* ====Footer==== */
+footer{
+    text-align: center;
+}
+footer p{
+    padding: 0.6rem;
+    margin: 1rem;
 }
