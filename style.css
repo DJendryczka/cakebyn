@@ -213,6 +213,103 @@ nav a {
     }
 }
 
+/* ====Carousel==== */
+
+.container-carousel{
+  max-width: 1200px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-txt {
+  max-width: 40%;
+}
+
+.carousel {
+  max-width: 600px;
+  margin: 0 10px;
+  position: relative;
+}
+
+.carousel-item,
+.carousel-item-hidden {
+  display: none;
+}
+
+.carousel .carousel-item img {
+  width: 100%;
+  max-width: 600px;
+}
+
+.carousel-item-visible {
+  display: block;
+  -webkit-animation: fadeVisibility 2s;
+          animation: fadeVisibility 2s;
+}
+
+.carousel-actions {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  border: none;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel button {
+  display: none;
+}
+
+#carousel-button-prev {
+  margin-left: 20px;
+}
+
+#carousel-button-next {
+  margin-right: 20px;
+}
+
+.carousel-text {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  border: none;
+  top: 50%;
+  left: 5%;
+  transform: translateY(50%);
+  color: whitesmoke;
+  text-shadow: 0px 0px 7px black;
+}
+
+@-webkit-keyframes fadeVisibility {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeVisibility {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  
+  .carousel {
+    padding-top: 2rem;
+  }
+ 
+}
+
 /* Contact */
 .form{
     width: 100vw;
