@@ -56,6 +56,9 @@ nav {
   justify-content: center;
   align-items: center;
 }
+ul{
+  padding: 0;
+}
 .desktop-menu {
   display: flex;
   background-color: #eee8d8;
@@ -91,10 +94,20 @@ nav a {
   margin: 3px 0;
   background-color: black;
 }
+.fade {
+  animation-name: fade;
+  animation-duration: 1.7s;
+}
+
+@keyframes fade {
+  from {opacity: 0}
+  to {opacity: 1}
+}
 
 @media screen and (max-width: 969px) {
   .hamburger-container {
     display: flex;
+  
   }
   .desktop-menu {
     display: none;
